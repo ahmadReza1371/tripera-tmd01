@@ -1,8 +1,10 @@
 export interface Itour {
-    tourId:number,
-    name:string,
-    description:string,
-    tourDuration:number,
-    groupName:string,
-    tourPhotos:string,
+    TourId:number,
+    Name:string,
+    Description:string,
+    TourDuration:number,
+    GroupName:string,
+    TourPhotos:string,
+    DepartDate:number,
+    ViewCount:number
 }

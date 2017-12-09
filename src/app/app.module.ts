@@ -1,17 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { TourDetailComponent } from './tour-detail/tour-detail.component';
 import { HomeComponent } from './home/home.component';
 import { TourBoxComponent } from './tour-box/tour-box.component';
 
 
-import {LastTourService} from './Services/last-tour.service'
 import { HttpClientModule ,HttpHeaders} from '@angular/common/http';
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     TourDetailComponent,
@@ -22,7 +20,7 @@ import { HttpClientModule ,HttpHeaders} from '@angular/common/http';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [LastTourService],
+  providers: [],
   bootstrap: [HomeComponent]
 })
 export class AppModule { }

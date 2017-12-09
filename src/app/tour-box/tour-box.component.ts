@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {LastTourService}from '../Services/last-tour.service'
 import { Itour } from '../Interfaces/itour';
 @Component({
   selector: 'app-tour-box',
@@ -8,15 +7,9 @@ import { Itour } from '../Interfaces/itour';
 })
 export class TourBoxComponent implements OnInit {
 
-  
- tours:Itour[]=[];
-  constructor(private tservice:LastTourService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.tservice.getLastTour().subscribe(p=>{
-        this.tours=p;
-        console.log(p);
-    });
   }
 
 }

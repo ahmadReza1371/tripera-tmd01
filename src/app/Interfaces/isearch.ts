@@ -1,4 +1,4 @@
-export interface Isearch {
+export interface ISearch {
     provinceId:number,
     MinPrice:number,
     MaxPrice:number,
