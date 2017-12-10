@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     FromDate:2,
     Themes:2,
     ToDate:2,
-   Vehicles:2
+   Vehicles:2 
   };
   tours:Itour[]=[];
   
@@ -32,10 +32,11 @@ export class HomeComponent implements OnInit {
   }
   
   ngOnInit() {
-    this.service.getLastTour().subscribe(p=>{
-      this.tours=p;
-      console.log(this.tours);
-    });
+    
+    // this.service.getLastTour().subscribe(p=>{
+    //   this.tours=p;
+    //   console.log(this.tours);
+    // });
     
     // this.service.getSearchResult(this.searchItem).subscribe(p=>{
     //   console.log(p)
