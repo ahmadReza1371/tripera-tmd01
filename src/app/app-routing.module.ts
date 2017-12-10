@@ -10,10 +10,11 @@ const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: '**', redirectTo: '/home' }
     // {path:'dashboard',canActivate:[AutGuard], component:DashboardComponent},
+    // {path:'movie/:id' ,canActivate:[AutGuard], component:DashboardComponent},
+    
     // {path:'basket' , canActivate:[AutGuard],component:BasketComponent},
     // {path:'admin' ,canActivate:[AutGuardAdmin],component:AdminComponent},
 
-    // {path:'movie/:id' ,canActivate:[AutGuard], component:DashboardComponent},
     // {path:'Not-Found', component:NotFoundComponent},
     // {path:'**', redirectTo:'/Not-Found'}
 
