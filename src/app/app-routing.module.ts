@@ -6,12 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { TourBoxComponent } from './tour-box/tour-box.component';
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: "tourdetail", component: TourDetailComponent },
     { path: 'home', component: HomeComponent },
+
+    { path: "tour/:id/:title", component: TourDetailComponent },
+    { path: "tour/:id", redirectTo: '/tour/:id/' },
+
     { path: '**', redirectTo: '/home' }
     // {path:'dashboard',canActivate:[AutGuard], component:DashboardComponent},
     // {path:'movie/:id' ,canActivate:[AutGuard], component:DashboardComponent},
-    
+
     // {path:'basket' , canActivate:[AutGuard],component:BasketComponent},
     // {path:'admin' ,canActivate:[AutGuardAdmin],component:AdminComponent},
 
